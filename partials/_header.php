@@ -26,7 +26,7 @@
                 <li class="nav-item">
                     <a class="nav-link <?php if ($active == 'Home') {
                                             echo 'active';
-                                        } ?> " aria-current="page" href="/ayush/healthify/">Home</a>
+                                        } ?> " aria-current="page" href="/">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -37,13 +37,13 @@
                 <li class="nav-item">
                     <a class="nav-link <?php if ($active == 'Contact') {
                                             echo 'active';
-                                        } ?> " href="/ayush/healthify/contact.php">Contact</a>
+                                        } ?> " href="contact.php">Contact</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link <?php if ($active == 'admin') {
                                             echo 'active';
-                                        } ?> " href="/ayush/healthify/admin.php">Admin</a>
+                                        } ?> " href="admin.php">Admin</a>
                 </li>
 
 
