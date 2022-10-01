@@ -32,7 +32,7 @@
                 <li class="nav-item">
                     <a class="nav-link <?php if ($active == 'About') {
                                             echo 'active';
-                                        } ?> " href="/ayush/healthify/about.php">About</a>
+                                        } ?> " href="/about.php">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php if ($active == 'Contact') {
@@ -47,7 +47,7 @@
                 </li>
 
 
-<!-- 
+                <!-- 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                         Ayush All Website
