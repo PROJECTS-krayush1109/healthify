@@ -1,7 +1,6 @@
-  
   <?php require '_dbconnect.php' ?>
-    
-    <?php
+
+  <?php
 
         session_start();
 
@@ -29,7 +28,7 @@
 
         if($result){
             echo "data inserted successfully. ";
-            header("LOCATION: /ayush/healthify/book_appointment.php?booked_appointment=true");
+            header("LOCATION: /book_appointment.php?booked_appointment=true");
             exit;
         }else{
             echo "Error Unable to insert data.";            

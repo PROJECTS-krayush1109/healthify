@@ -15,11 +15,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-        
-           <!-- Load icon library -->
+
+    <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  
+
     <?php 
     // require 'stylesheet/_mobile.php'
     // my custom css is added to the _header.php because it is included in all other file already
@@ -40,14 +40,14 @@
 
 
 
-            <!-- Specific Thread container heading and description -->
-            <div class="container mt-4">
+    <!-- Specific Thread container heading and description -->
+    <div class="container mt-4">
         <div class="jumbotron alert alert-info">
             <h1 class="mb-3 text-center fw-bold">
                 Search Result for
                 <span class="text-info" style="text-shadow: 1px 2px 3px black;">
-                <?php echo $_GET['search']; ?>
-                </span> 
+                    <?php echo $_GET['search']; ?>
+                </span>
             </h1>
             <hr class="my-">
 
@@ -82,7 +82,7 @@
                     $link = $row2['link'];
                     
                     
-                    $url = "/ayush/healthify/shop_by_health_condition.php#$link";
+                    $url = "/shop_by_health_condition.php#$link";
 
                     $noResult = false;
 
@@ -127,10 +127,10 @@
 
 
 
-    <!-- Invoking Footer -->
-    <?php require 'partials/_footer.php';  ?>
+            <!-- Invoking Footer -->
+            <?php require 'partials/_footer.php';  ?>
 
-    <!-- All JS are kept in the footer -->
+            <!-- All JS are kept in the footer -->
 
 </body>
 

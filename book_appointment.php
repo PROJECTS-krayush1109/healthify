@@ -38,7 +38,7 @@
 
 
 
-    
+
 
 
     <?php
@@ -49,7 +49,7 @@ if( !isset($_SESSION['user_email']) == "admin@a" ){
 
     <!-- LOGIN AS ADMIN FORM -->
     <h2 class="text-center my-3">Please Login first to Book an Appointment</h2>
-    <form class="" action="/ayush/healthify/partials/_handleLogin.php" method="POST">
+    <form class="" action="partials/_handleLogin.php" method="POST">
         <div class="container my-5 col-md-3 justify-content-center">
         <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
@@ -78,7 +78,7 @@ if( !isset($_SESSION['user_email']) == "admin@a" ){
 
 
 
-    
+
     <?php
 
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true ) {
@@ -106,7 +106,7 @@ if( !isset($_SESSION['user_email']) == "admin@a" ){
         
 echo '
 
-<form action="/ayush/healthify/partials/_handleAppointment.php" method="POST" class="needs-validation" novalidate>
+<form action="/partials/_handleAppointment.php" method="POST" class="needs-validation" novalidate>
 
     <div class="container my-3">
         <div class="jumbotron pt-3 alert-info">
@@ -169,10 +169,10 @@ echo '
                     <div class="col-md-3 form-group">
                         <label for="date" class="form-label" required>Prefered Appointment Date</label>
                         '; ?> <?php require "partials/_calender.php"; ?>
-                        
-                        </div>
-                        
-                        <?php echo '
+
+    </div>
+
+    <?php echo '
                         
                         <div class="col-md-2 form-group">
                         <label for="time" class="form-label" required>Prefered Time</label>
@@ -243,12 +243,12 @@ echo '
     }
                     }
                     ?>
-                        
-                        <!-- Invoking Footer -->
-                        <?php require 'partials/_footer.php';  ?>
-                        
-                        <!-- All JS are kept in the footer -->
-                        
-                        </body>
-                        
-                        </html>
+
+    <!-- Invoking Footer -->
+    <?php require 'partials/_footer.php';  ?>
+
+    <!-- All JS are kept in the footer -->
+
+</body>
+
+</html>

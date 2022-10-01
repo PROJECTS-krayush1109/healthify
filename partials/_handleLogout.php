@@ -4,6 +4,6 @@ session_start();
 session_unset();
 session_destroy();
 
-header("LOCATION: /ayush/healthify/index.php?logout=true");
+header("LOCATION: /index.php?logout=true");
 
 ?>

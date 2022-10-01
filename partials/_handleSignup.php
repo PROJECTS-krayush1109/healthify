@@ -41,11 +41,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $numRows = mysqli_num_rows($result);
     if($numRows>0){
         $showError = "This Email ID Already Exists!  Go to the Login Page.";
-        header("Location: /ayush/healthify/index.php?emailExists=true");
+        header("Location: /index.php?emailExists=true");
         exit;
     }elseif($cpass != $pass) {
         $showError = "Password don't match! Please type the correct Password.";
-        header("Location: /ayush/healthify/index.php?passwordNotMatch=true");
+        header("Location: /index.php?passwordNotMatch=true");
         exit;
     }else{
         $hash = password_hash($pass, PASSWORD_DEFAULT);
@@ -53,7 +53,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $result = mysqli_query($conn, $sql);
         if($result){
             $showAlert = "Your account has been created successfully. Now you can Login.";
-            header("Location: /ayush/healthify/index.php?signupsuccess=true");
+            header("Location: /index.php?signupsuccess=true");
             exit;
         }
     }

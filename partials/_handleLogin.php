@@ -31,28 +31,28 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
             // SPECIAL LOGIN FOR ADMIN IN IF CONDITION
             if($_SESSION['user_email'] == "admin@a"){
-                header("LOCATION: /ayush/healthify/admin.php");
+                header("LOCATION: /admin.php");
                 exit;
             }elseif($_POST['login_from_appointment_page'] == "true"){
                 // echo "You are Logged In from appointment table ";
-                header("LOCATION: /ayush/healthify/book_appointment.php");
+                header("LOCATION: /book_appointment.php");
             }            
             else{
                 
                 // $showAlert = "You are Logged in & Your Session has been Started";
-                header("LOCATION: /ayush/healthify/index.php?login=true");
+                header("LOCATION: /index.php?login=true");
                 echo "loggedin";
                 exit;
             }  
         }
         else{
-            header("LOCATION: /ayush/healthify/index.php?incorrectPassword=true");
+            header("LOCATION: /index.php?incorrectPassword=true");
             // $showError = "Incorrect Password Entered.";
             exit;
         }
     }
     else{
-        header("LOCATION: /ayush/healthify/index.php?emailNotExist=true");
+        header("LOCATION: /index.php?emailNotExist=true");
         // $showError = " '.$email.' This Email ID doesn't Exists. Please Sign Up first.";
         exit;
     }

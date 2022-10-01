@@ -5,7 +5,7 @@ if( !isset($_SESSION['user_email']) == "admin@a" ){
     echo '
 
     <!-- LOGIN AS ADMIN FORM -->
-    <form class="" action="/ayush/healthify/partials/_handleLogin.php" method="POST">
+    <form class="" action="/partials/_handleLogin.php" method="POST">
     <div class="container my-5 col-md-3 justify-content-center">
         <div class="form-group">
             <label for="exampleInputEmail1">Admin Email</label>

@@ -47,18 +47,19 @@
 
     <h2 class="text-center my-3 mb-5">Buy Medicine Form Trusted and Verified Link</h2>
 
-<form action="/ayush/healthify/buy_medicine.php" method="POST"> 
+    <form action="/buy_medicine.php" method="POST">
 
-    <div class="input-group justify-content-center my-5 outline-black" style="" >
-        <div class="form-outline">
-            <input type="search" name="search" style="border: 1px solid blue; width: 25rem;" id="form1" class="form-control" />
-            <label class="form-label" for="form1"></label>
+        <div class="input-group justify-content-center my-5 outline-black" style="">
+            <div class="form-outline">
+                <input type="search" name="search" style="border: 1px solid blue; width: 25rem;" id="form1"
+                    class="form-control" />
+                <label class="form-label" for="form1"></label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
-        <button type="submit" class="btn btn-primary">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
-</form>
+    </form>
 
 
 

@@ -13,8 +13,7 @@
             </div>
 
 
-            <form action="/ayush/healthify/partials/_handleSignup.php" method="POST" class="needs-validation"
-                novalidate>
+            <form action="/partials/_handleSignup.php" method="POST" class="needs-validation" novalidate>
 
                 <div class="modal-body ">
 
