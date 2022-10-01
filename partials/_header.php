@@ -5,7 +5,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-inf sticky-top" style="background-color: #1ac6ff;">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-danger text-white" href="/ayush/healtify/">Healthify+</a>
+        <a class="navbar-brand fw-bold text-danger text-white" href="/">Healthify+</a>
 
 
         <?php
