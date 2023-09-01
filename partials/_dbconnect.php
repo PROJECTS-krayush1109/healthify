@@ -22,6 +22,7 @@ $password = "aFyN3vVJKe";
 $database_name = "uQsU1tfWOe";
 
 $conn = mysqli_connect($servername, $username, $password, $database_name);
+echo $conn;
 if(!$conn){
     die("Unable to conncet");
 }else{
